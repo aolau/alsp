@@ -1,0 +1,13 @@
+Test framework
+* TODO Count errors
+
+* TODO Read string to s-exp
+* TODO Parse s-exp to AST
+* TODO Eval AST to s-exp
+* TODO Eval with environment
+
+* TODO Basic makefile
+
+* TODO Value representation
+* TODO S-exp representation
+* TODO AST representation
