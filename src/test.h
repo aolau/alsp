@@ -14,9 +14,11 @@
 
 #define TEST_BEGIN                              \
     int main() {                                \
-        printf("%s - %s\n", name, desc);
+        printf("%s - %s\n", name, desc);        \
         
-#define TEST_END printf("\nfinished with %i errors\n", 0); }
+#define TEST_END                                \
+    printf("\nfinished with %i errors\n", 0);   \
+    }
 
 #define TEST_RUN(name__)                        \
     test_setup(data);                           \
