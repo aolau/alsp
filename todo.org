@@ -1,5 +1,7 @@
 Test framework
-* TODO Count errors
+* TODO Run multiple test suites (Python?)
+* DONE Count errors
+* DONE Print error messages
 
 * TODO Read string to s-exp
 * TODO Parse s-exp to AST
