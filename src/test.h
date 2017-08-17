@@ -15,9 +15,13 @@
 #define TEST_BEGIN                              \
     int main() {                                \
         printf("%s - %s\n", name, desc);        \
+        int errors = 0;
         
 #define TEST_END                                \
-    printf("\nfinished with %i errors\n", 0);   \
+    printf("\nfinished with %i %s\n",           \
+           errors,                              \
+           errors == 1 ? "error" : "errors");   \
+    return errors ? 1 : 0;                      \
     }
 
 #define TEST_RUN(name__)                        \
@@ -26,6 +30,7 @@
         bool res = true;                        \
         test_case_##name__(data, res);          \
         printf(res ? "." : "x");                \
+        errors += res ? 0 : 1;                  \
     } catch (...) {                             \
         printf("e");                            \
     }                                           \

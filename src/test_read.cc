@@ -17,7 +17,7 @@ TEST_TEARDOWN
 
 TEST(number)
 {
-    ASSERT_EQUAL(5, data.num);
+    ASSERT_EQUAL(4, data.num);
 }
 
 TEST(str)
